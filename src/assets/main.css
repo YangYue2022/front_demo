@@ -1,0 +1,31 @@
+@import './base.css';
+
+html,
+body {
+  height: 100%; /* 设置高度为100% */
+  width: 100%; /* 设置宽度为100% */
+  margin: 0; /* 移除外边距 */
+  padding: 0; /* 移除内边距 */
+  overflow: hidden; /* 可选：防止滚动条出现 */
+}
+
+#app {
+  height: 100%; /* 保证 #app 元素高度填满整个视口 */
+  width: 100%; /* 保证 #app 元素宽度填满整个视口 */
+  margin: 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
